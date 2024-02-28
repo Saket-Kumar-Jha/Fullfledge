@@ -1,0 +1,53 @@
+.container {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 585px !important;
+    overflow: auto !important;
+}
+
+.headers {
+    text-align: center;
+    padding: 20px;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+img {
+    width: 30%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+    padding:20px;
+}
+.btn{
+    display: flex;
+    gap:10px;
+}
+button {
+    position: relative;
+    top:0;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .headers {
+        padding: 10px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}

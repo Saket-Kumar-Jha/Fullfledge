@@ -1,0 +1,42 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  .example-form-field {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 300px;
+  }
+  .example-form-field{
+    margin-left: 500px;
+    margin-top: 20px;
+  }
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .hide {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .show {
+    opacity: 1;
+  }
+  /* .body{
+    position:fixed;
+    width:100%;
+    z-index: 10;
+    bottom: 500;
+  } */
+
+
+  
