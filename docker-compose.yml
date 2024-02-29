@@ -1,0 +1,20 @@
+version: "3.5"
+
+services:
+
+  frontend:
+    image: angular
+    build:
+      context: ./Frontend
+      dockerfile: ./Dockerfile
+    ports:
+      - 4205:4200
+
+  backend:
+    image: msnet6
+    build:
+      context: ./Backend/TestDemoApp
+      dockerfile: ./Dockerfile
+    ports:
+      - 5005:80
+
