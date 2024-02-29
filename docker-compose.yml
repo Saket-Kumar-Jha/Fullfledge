@@ -9,10 +9,10 @@ services:
     ports:
       - 4205:4200
 
-  backend:
-    build:
-      context: ./Backend/TestDemoApp
-      dockerfile: ./Dockerfile
-    ports:
-      - 5005:80
+  #backend:
+   #build:
+      #context: ./Backend/TestDemoApp
+      #dockerfile: ./Dockerfile
+    #ports:
+       #5005:80
 
