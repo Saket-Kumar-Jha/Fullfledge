@@ -3,6 +3,7 @@ version: "3.5"
 services:
 
   frontend:
+    image: node
     build:
       context: ./Frontend
       dockerfile: ./Dockerfile
