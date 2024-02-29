@@ -1,0 +1,121 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    gap:20px;
+  }
+  
+  .product-card {
+    width: 300px !important;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column; 
+  }
+  
+  .product-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  }
+  
+  .mat-card-content {
+    padding: 16px;
+    flex: 1;
+  }
+
+  h3 {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+  }
+  
+  p {
+    margin-bottom: 6px;
+  }
+
+  .product-card {
+    width: 250px; 
+  }
+  
+  .product-card img {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover;
+    padding:20px;
+  }
+  .custom-label-primary {
+    color: #1976d2;
+    font-weight: 500;
+  }
+  
+  .custom-label-secondary {
+    color: #8e24aa;
+    font-weight: 500;
+  }
+  
+  .custom-label-success {
+    color: #4caf50; 
+    font-weight: 500;
+  }
+
+  .product-card img:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+  }
+  .buttonClass{
+    padding: 5px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    gap: 10px;
+  }
+  .buttonClass button{
+    width: 50%;
+  }
+  .desc {
+    max-height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+h3 {
+  max-height: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.poster img{
+  height:500px;
+  width:100%;
+}
+.logo{
+  cursor: pointer;
+}
+
+  
+@media (max-width: 768px) {
+  .card-container {
+    padding: 10px;
+  }
+
+  .product-card {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .buttonClass {
+    flex-direction: column;
+  }
+
+  .buttonClass button {
+    width: 100%;
+    margin-top: 5px;
+  }
+  .poster img{
+    height:200px;
+    width:100%;
+  }
+}

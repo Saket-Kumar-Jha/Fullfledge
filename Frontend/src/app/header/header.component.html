@@ -1,0 +1,32 @@
+<div class="body">
+    <mat-toolbar color="primary">
+        <button mat-icon-button [matMenuTriggerFor]="menu" matTooltip="Side Nav menu">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item>Home</button>
+            <button mat-menu-item>Cart</button>
+            <button mat-menu-item>Contact</button>
+        </mat-menu>
+        <div class="logo">
+            <span>
+                <a routerLink='card'>
+                    <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1637759004/Croma%20Assets/CMS/Category%20icon/Final%20icon/Croma_Logo_acrkvn.svg"
+                        alt="Logo">
+                </a>
+            </span>
+
+        </div>
+
+        <span class="example-spacer"></span>
+        <button mat-icon-button class="example-icon favorite-icon" matTooltip="favorite">
+            <mat-icon>favorite</mat-icon>
+        </button>
+        <button mat-icon-button class="example-icon" matTooltip="Share">
+            <mat-icon>share</mat-icon>
+        </button>
+        <button mat-icon-button routerLink='addtocart' class="example-icon" matTooltip="Add-To-Cart">
+            <mat-icon matBadge="{{noofitem}}" matBadgeColor="warn" matBadgeSize="medium">shopping_cart</mat-icon>
+        </button>
+    </mat-toolbar>
+</div>

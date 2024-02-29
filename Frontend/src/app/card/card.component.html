@@ -1,0 +1,23 @@
+<div class="poster">
+  <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1698744582/Croma%20Assets/CMS/LP%20Page%20Banners/2023/Express%20Delivery/31st%20Oct/LP%20BFF%20WTH/LP_ExpressDelivery_WTH_19Oct2023_b3xttu.png?tr=w-2048"
+      alt="Poster Image">
+</div>
+<div class="card-container" fxLayout="row wrap" fxLayoutGap="200px">
+    <mat-card *ngFor="let prod of product" class="product-card">
+      <img mat-card-image [src]="prod.thumbnail" alt="{{ prod.title }}">
+      <mat-card-content>
+        <h3>{{ prod.title }}</h3>
+        <p class="desc">{{ prod.description }}</p>
+        <p><mat-label class="custom-label-primary">Price : ${{ prod.price }}</mat-label></p>
+        <p><mat-label class="custom-label-secondary">Rating : {{ prod.rating }}</mat-label></p>
+        <p><mat-label class="custom-label-success">Brand : {{ prod.brand }}</mat-label> </p>
+        <!-- <p>Category: {{ prod.category }}</p> -->
+       </mat-card-content>
+       <div class="buttonClass">
+        <button mat-raised-button color="primary" matTooltip="AddToCart" (click)="addToCart(prod)">Add To Cart</button>
+        <button mat-raised-button color="accent" matTooltip="More-Info." [routerLink]="['/details', prod.id]" routerLinkActive="active">View-Details</button>
+      </div>
+    </mat-card>
+  </div>
+  
+  
