@@ -8,7 +8,7 @@ services:
       context: ./Frontend
       dockerfile: ./Dockerfile
     ports:
-      - 4205:4200
+      - 4208:4200
 
   backend:
     image: msnet6
@@ -16,5 +16,5 @@ services:
       context: ./Backend/TestDemoApp
       dockerfile: ./Dockerfile
     ports:
-      - 5005:80
+      - 5007:85
 
