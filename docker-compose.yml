@@ -16,5 +16,5 @@ services:
       context: ./Backend/TestDemoApp
       dockerfile: ./Dockerfile
     ports:
-      - 5007:85
+      - 5007:80
 
